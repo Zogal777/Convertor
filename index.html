@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Convert distance, temperature, currency, mass and volume with this simple and accessible web converter.">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Converter</h1>
+
+    <label for="category">Kategorija</label>
+    <select id="category">
+      <option value="distance">Attālums</option>
+      <option value="temperature">Temperatūra</option>
+      <option value="value">Vienība</option>
+      <option value="mass">Massa</option>
+      <option value="volume">Tilpums</option>
+    </select>
+
+    <label for="fromValue">Ievade:</label>
+    <input type="number" id="fromValue" value="0" />
+
+    <label for="fromUnit">No:</label>
+    <select id="fromUnit"></select>
+
+    <label for="toUnit">Uz:</label>
+    <select id="toUnit"></select>
+
+    <label for="toValue">Izvade:</label>
+    <input type="text" id="toValue" value="0" readonly />
+
+    <button id="swapBtn">Apmainīt vienības</button>
+    <button id="toggleTheme">Noformējuma maiņa</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
